@@ -84,3 +84,7 @@ def send_tip(
         return {"status": "success", "tip": response.data}
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "NovaSphere backend is running"}
