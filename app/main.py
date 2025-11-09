@@ -88,3 +88,4 @@ def send_tip(
 @app.get("/")
 def health_check():
     return {"status": "ok", "message": "NovaSphere backend is running"}
+# Trigger redeploy
